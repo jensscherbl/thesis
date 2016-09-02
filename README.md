@@ -1,6 +1,6 @@
 # Distributed session handling for stateful PHP web applications in large-scale failover scenarios
 
-https://github.com/jensscherbl/thesis/blob/master/document.pdf
+https://github.com/jensscherbl/thesis-proposal/blob/master/document.pdf
 
 In recent years PHP has become a viable option for large-scale server-side enterprise applications. Some of the platform’s fundamental drawbacks related to its default execution model still remain, though, and consequently developers are calling for stateful execution in PHP.
 
