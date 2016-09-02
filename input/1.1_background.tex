@@ -1,0 +1,29 @@
+PHP – the general purpose scripting language that has dominated server-side web development for many years – has come a long way from its humble beginnings.
+
+Today – over 20 years later – PHP is at the center of a massive and vibrant open source ecosystem, featuring countless libraries, frameworks, content management systems and e-commerce platforms, and drives over 80\%~\cite{W3Techs2016} of the entire web, in some capacity or another. For large-scale server-side enterprise applications, though, PHP has not always been among the prevalent technologies, and has only become a viable option more recently~\cite{Zend2007, Bruno2012, Bruno2013}.
+
+In terms of performance, the leading provider of products and services for PHP truthfully admitted that the language would “never be as fast as compiled applications” in 2007~\cite{Zend2007}, but also suggested that other considerations such as language familiarity, developer efficiency, maintainability and portability would be deciding factors in many cases.
+
+Scott Trent et al.~\cite{Trent2008} compared technologies for lightweight dynamic content generation in 2008, and found that PHP was in fact 5–10\% slower than JSP regarding throughput and performance. The researchers noted, however, that overall application performance often depends on many different aspects under real-world conditions, such as server architecture or the specific task performed. For other purposes, such as working with SOAP-based web services, PHP outperformed Java as a web service engine for larger payloads due to its use of lower-level C implementations for many XML- and SOAP-related tasks~\cite{Suzumura2008}.
+
+Nikolaj Cholakov~\cite{Cholakov2008} still considered the platform to be “not suitable for enterprise scale applications”, though, and even claimed that PHP was encouraging poor programming habits at the time.
+
+Newer studies suggest, however, that PHP has improved in terms of software quality in recent years, or was not actually significantly inferior to begin with. For example, Panos Kyriakakis and Alexander Chatzigeorgiou~\cite{Kyriakakis2014} looked into maintenance patterns of popular open-source projects in 2014 and found that PHP applications undergo “systematic maintenance driven by targeted design decisions”. They further noticed that “maintenance is performed with care and in a well-organized manner”, and concluded that “PHP does not seem to hinder the adaptive and perfective maintenance activities”.
+
+This was also confirmed by Theodoros Amanatidis and Alexander Chatzigeorgiou~\cite{Amanatidis2016}, who analyzed the evolution of PHP applications in 2015 and found that the examined projects were indeed under constant growth and continuous maintenance – as predicted by Lehman’s laws of software evolution, which characterize trends in size, changes and quality of evolving software systems. More surprisingly, however, Amanatidis and Chatzigeorgiou did not find any evidence that software quality deteriorates over time for PHP applications:
+
+    \begin
+    {quote}
+
+    Speeding-up development time normally compromises software quality, thereby hindering its sustainability. However, this accumulation of technical debt is not evident for PHP web applications which manage to evolve without increasing their complexity and without demanding increased effort.~\cite{Amanatidis2016}
+
+    \end
+    {quote}
+
+The researchers attributed this to PHP’s ability to reduce implementation times and enhance developer productivity. It should be noted, however, that this is a presumption mainly derived from older studies of scripting languages in general rather than PHP in particular. Concerning the “latent perception that scripting languages are not suitable for proper software engineering”, Amanatidis and Chatzigeorgiou pointed out that “such claims can hardly be found in the scientific literature possibly because they are not backed up by real evidence”.
+
+Some of the platform’s fundamental drawbacks, often related to its default execution model, still remain, though, and developers are consequently calling for stateful execution in PHP to keep the language competitive.
+
+The thesis goes into more detail on this matter in a dedicated ‘Groundwork’ chapter, but for a better understanding of what the platform is actually capable of, breaking with its limiting and wasteful per-request lifecycle already enables entirely new kinds of applications for the language, ranging from fully multithreaded application servers\footnote{\url{http://appserver.io/}} to non-blocking and event-driven concurrency frameworks\footnote{\url{http://amphp.org/}}.
+
+As usual, however, with great power there must also come great responsibility~\cite{Lee1962}.

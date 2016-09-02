@@ -1,0 +1,23 @@
+Enterprise applications often serve vast amounts of users and process a rapidly growing mass of data. Hence, PHP developers now also need to consider load distribution and failover scenarios in order to accommodate these increasing demands.
+
+    \begin
+    {quote}
+
+    Due to the critical nature of these applications, scalability and reliability are crucial. Often, entire business processes rely on these applications, and their continued availability can have a direct effect on a company’s financial performance.~\cite{Bruno2013}
+
+    \end
+    {quote}
+
+Unfortunately, deploying and running distributed PHP applications in a large-scale cluster environment is not straightforward – yet.
+
+    \begin
+    {quote}
+
+    Although open source PHP is an excellent starting point for an application, it doesn’t come with built-in enterprise features such as clustering, high availability [...] and specialized caching [...] for optimal performance.~\cite{Bruno2013}
+
+    \end
+    {quote}
+
+Perhaps the most interesting question in this context is how to maintain session state across large numbers of interconnected application nodes – preferably in a way that is transparent to application developers and does not sacrifice consistency or performance.
+
+While other ecosystems have been targeting enterprise customers from the very beginning and already provide reasonable functionality as part of their larger runtime environments, PHP is still limited to insufficient workarounds and proprietary third-party solutions in that regard.
